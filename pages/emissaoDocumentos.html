@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Emissão de Documentos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+  <style type="text/css">
+        body {
+        
+            background: url("../images/6c57f10e96c08fd666d9622757970261.jpg") no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+    </style>
+<body>
+
+
+<div class="container-fluid">
+        <div class="row">
+            <ol class="breadcrumb" class="bg-primary" style="background-color: #4B0082">
+                    <li style="margin-left: 300px;"><a href="ihm-telainicial/index.html" style="color:white">Tela inicial</a></li>
+                    
+                    <li class="active" style="color:white;font-weight: bold">Tela de Matricula</li>
+                </ol>
+        </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+                <h1 style="text-align:center"><span class="glyphicon glyphicon-file"></span> Emissão de Documentos</h1>
+            </div>
+  </div>
+</div>
+
+
+<div class="container">
+  
+  <ul class="nav nav-tabs" >
+    <li class="active" style="background-color:#4B0082"><a href="#menu1" style="color:black">Declarações</a></li>
+    <li style="background-color: #4B0082"><a href="#menu2" style="color:black">Autorizações</a></li>
+    <li style="background-color: #4B0082"><a href="#menu3" style="color:black">Encaminhamentos</a></li>
+  </ul>
+	
+	<br/>
+	<br/>
+  <div class="tab-content">
+	
+    
+    <div id="menu1" class="tab-pane fade in active">
+		<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Selecione o tipo
+		  <span class="glyphicon glyphicon-collapse-down"></span></button>
+		  <ul class="dropdown-menu">
+			<li><a href="#">Declaração de Matrícula <span class="glyphicon glyphicon-pencil"></span></a></li>
+			<li><a href="#">Certificado de Conclusão <span class="glyphicon glyphicon-education"></span></a></li>
+		  </ul>
+		</div>
+        <h3>DECLARAÇÃO DE MATRÍCULA</h3>
+	  
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<button type="button" class="btn btn-primary center-block" style="background-color:#4B0082"><span class="glyphicon glyphicon-print"></span> Imprimir</button>
+    </div>
+	
+    <div id="menu2" class="tab-pane fade">
+      <h3>AUTORIZAÇÃO</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<button type="button" class="btn btn-primary center-block" style="background-color:#4B0082"><span class="glyphicon glyphicon-print"></span> Imprimir</button>
+
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>ENCAMINHAMENTO DE ALUNO</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<button type="button" class="btn btn-primary center-block" style="background-color:#4B0082"><span class="glyphicon glyphicon-print"></span> Imprimir</button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+
+</body>
+</html>

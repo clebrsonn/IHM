@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="Cadastro%20de%20Alunos_arquivos/bootstrap.xml">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+
+    <title>Cadastro de Alunos</title>
+</head>
+<style type="text/css">
+    body {
+    
+        background: url("../images/maracatu.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+</style>
+<body>
+
+
+			<div class="container-fluid">
+				<div class="row">
+				<ol class="breadcrumb" class="bg-primary" style="background-color: #4B0082">
+                    <li style="margin-left: 300px;"><a href="ihm-telainicial/index.html" style="color:white">Tela Inicial</a></li>
+					<li><a href="#" style="color:white">cadastro</a></li>
+					<li class="active" style="color:white;font-weight: bold">Cadastro de Alunos</li>
+                </ol>
+                </div>
+			</div>
+				
+	<div class="container">
+
+			<div class="page-header">
+				<h1 id="header_4" class="form-header" style="text-align:center">
+					Cadastrar Alunos
+				</h1>
+			</div>
+
+		<div class="row">
+			<form class="form-horizontal">
+			
+				<div class="row">
+					<div class="form-group">
+						 <div class="col-sm-7">
+							<label for="nome">Nome</label>
+							<input class="form-control" id="nome" placeholder="Jane Doe" type="text">
+						</div>
+						<div class="col-sm-3">
+							<label for="apelido">Apelido</label>
+							<input class="form-control" id="apelido" placeholder="apelido" type="text">
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="form-group">
+						 <div class="col-sm-3">
+							<label for="nascimento">Data de Nascimento</label>
+							<input class="form-control" id="nascimento" placeholder="Jane Doe" type="date">
+						</div>
+
+						<div class="col-sm-offset-1 col-sm-3">
+							<label for="sexo" class="control-label">Sexo</label>
+							<div class="row">
+								<label class="radio-inline">
+									<input id="feminino" name="sexo" value="feminino" type="radio"> Feminino
+								</label>
+								<label class="radio-inline">
+									<input id="masculino" name="sexo" value="masculino" type="radio"> Masculino
+								</label>
+							</div>
+
+						</div>
+
+						 <div class="col-sm-3">
+							<label for="naturalidade">Naturalidade</label>
+							<input class="form-control" id="naturalidade" placeholder="pernambuco" type="text">
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			<div class="row">
+					<div class="form-group">
+						 <div class="col-sm-3">
+							<label for="RG">RG</label>
+							<input class="form-control" id="RG" placeholder="76258298" type="number">
+						</div>
+						<div class="col-sm-4">
+							<label for="CPF">CPF</label>
+							<input class="form-control" id="cpf" placeholder="06548752314" max="11" min="11" type="number">
+						</div>
+						
+						<div class="col-sm-3">
+							<label for="Nacionalidade">Nacionalidade</label>
+							<input class="form-control" id="Nacionalidade" placeholder="brasileiro" type="text">
+						</div>
+						
+					</div>
+			</div>
+			
+			
+				<div class="row">
+					<div class="form-group">
+					
+						<div class="col-sm-3">
+
+							<label for="civil">Estado Civil</label>
+
+							<select class="form-control">
+								<option selected="selected">Selecione uma Opção</option>
+								<option>Casado</option>
+								<option>Solteiro</option>
+								<option>Outro</option>
+							</select>
+						</div>
+					
+						<div class="col-sm-3">
+							<label for="cor">Cor</label>
+							<input class="form-control" id="cor" type="text">
+						</div>
+						
+						 <div class="col-sm-offset-1 col-sm-3">
+							<label for="religiao">Religião</label>
+							<input class="form-control" id="religiao" type="text">
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3">
+							<label for="email">E-mail</label>
+							<input class="form-control" id="email" placeholder="mail@mail.com" type="email">
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="row col-sm-10">
+					<button type="button" class="btn btn-primary" aria-label="Left Align">VOLTAR</button>
+					<button type="button" class="btn btn-success pull-right" aria-label="Right Align">PRÓXIMO</button>
+
+
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body></html>

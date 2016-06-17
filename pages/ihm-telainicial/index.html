@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bootstrap Core CSS -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#aluno").mouseenter(function () {
+                $('#bb').stop().fadeToggle(1000);
+            }).mouseleave(function () {
+                $('#bb').attr('style', 'display: none');
+            });
+
+            $("#curso").mouseenter(function () {
+                $('#bb1').stop().fadeToggle(1000);
+            }).mouseleave(function () {
+                $('#bb1').attr('style', 'display: none');
+            });
+
+            $("#ge").mouseenter(function () {
+                $('#bb6').stop().fadeToggle(1000);
+            }).mouseleave(function () {
+                $('#bb6').attr('style', 'display: none');
+            });
+
+            //Clicks sub menu - QUEM VAI LIGAR AS TELAS OLHEM AQUI/ SUB MENUS NESSA PARTE E MENU GRANDE NO 'HREF' DE CADA 'a'
+
+            $("#alunoMais").click(function () {
+
+                window.location.replace("../Cadastro de Alunos.html");
+
+            });
+
+            $("#alunoSearch").click(function () {
+
+                 window.location.replace("../tela de busca_aluno.html");
+
+            });
+
+            $("#cursoMais").click(function () {
+
+                window.location.replace("../cadastro_curso.html");
+
+            });
+
+            $("#cursoSearch").click(function () {
+
+                 window.location.replace("../tela de busca curso.html");
+
+            });
+
+            $("#geMais").click(function () {
+
+                window.location.replace("../cadastro_usuario.html");
+
+            });
+
+            $("#geSearch").click(function () {
+
+                 window.location.replace("../tela de busca.html");
+
+            });
+
+            $("#conta").click(function () {
+
+                $('#et').stop().hide("slide", {
+                    direction: "left"
+                }, 1000, function () {
+                    $('#et2').show('slide', { direction: 'left' }, 1000);
+                });
+             
+            });
+
+            $("#voltar").click(function () {
+
+                $('#et2').stop().hide("slide", {
+                    direction: "left"
+                }, 1000, function () {
+                    $('#et').show('slide', { direction: 'left' }, 1000);
+                });
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<style type="text/css">
+    body {
+    
+        background: url("../../images/943a54ac15c333f74bdc5dd48666aa32.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+</style>
+<body>
+    
+    <nav class="navbar navbar-default corBar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div id="et">
+                    <div class="row" style="display:normal;">
+                        <div class="col-sm-6">
+                            <h3 style="color:white">Nome: Alison de Andrade Carrera</h3>
+                        </div>
+                        <div class="col-sm-5">
+                            <h3 style="color:white">Função: Assistente Pessoal</h3>
+                        </div>
+                        <div class="col-sm-1">
+                            <a href="#" id="conta"><img alt="imagem Perfil" style="margin-top:10px; margin-left:180%;" class="imgPerfil" src="img/padrao_pessoa.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="et2" style="display:none;">
+                    <div class="col-sm-1">
+                        <a href="#" id="voltar">
+                            <span class="glyphicon glyphicon glyphicon-arrow-left white " style="margin-left:8px;" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="col-sm-1">
+                        <img alt="imagem Perfil" style="margin-top:10px; margin-left:90%;" class="imgPerfil" src="img/padrao_pessoa.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#"><h3 style="color:white">Configurações de conta</h3></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><h3 style="color:white">Sair</h3></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../tela_aluno.html" id="aluno" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon" aria-hidden="true"></span>
+
+                    <img style="margin-left:33%;" alt="Aluno" src="img/face_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Alunos</h2>
+                    <div id="bb" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" id="alunoMais" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" id="alunoSearch" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../tela_curso.html" id="curso" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon" aria-hidden="true"></span>
+                    <img style="margin-left:33%;" alt="Curso" src="img/library_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Cursos</h2>
+                    <div id="bb1" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" id="cursoMais" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" id="cursoSearch" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="col-md-4 col-sm-4 expand">
+                <a href="#" id="busca" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon" aria-hidden="true"></span>
+                    <img style="margin-left:33%;" alt="Busca" src="img/search_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Busca</h2>
+                    <div id="bb2" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>-->
+
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../emissaoDocumentos.html" id="doc" class="boxStyle thumbnail corThum">
+                    <img style="margin-left:33%;" alt="Emissão de documentos" src="img/print_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Emissão de documentos</h2>
+                    <div id="bb3" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../AdminLTE-2.3.3/pages/tables/index.html" id="rel" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon" aria-hidden="true"></span>
+                    <img style="margin-left:33%;" alt="Relatório" src="img/descr_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Relatório</h2>
+                    <div id="bb4" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../tela_funcionario.html" id="ge" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon " aria-hidden="true"></span>
+                    <img style="margin-left:33%;" alt="Gerenciamento" src="img/settings_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Gerenciamento</h2>
+                    <div id="bb6" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" id="geMais" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" id="geSearch" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 expand">
+                <a href="../tela de ajuda.html" id="ajuda" class="boxStyle thumbnail corThum">
+                    <span class="glyphicon " aria-hidden="true"></span>
+                    <img style="margin-left:33%;" alt="Ajuda" src="img/help_m.png">
+                    <h2 class="descricaoImg" style="margin-top:-4px;">Ajuda</h2>
+                    <div id="bb5" style="display:none;">
+                        <span class="glyphicon glyphicon glyphicon-plus white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-search white expand2" style="margin-left:8px;" aria-hidden="true"></span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

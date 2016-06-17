@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movimento Pró Criança</title>
+
+        <!-- CSS -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        
+        
+
+    </head>
+    <style type="text/css">
+        body {
+        
+            background: url("../images/a5ee4c22920e5eb04b9f861a1d7bdbfe.jpg") no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+    </style>
+    <body>
+
+
+
+
+        <!-- Top content -->
+        <div class="container-fluid" >
+            <div class="row">
+                <ol class="breadcrumb" class="bg-primary" style="background-color: #4B0082">
+                    <li style="margin-left: 300px;"><a href="ihm-telainicial/index.html" style="color:white">Tela inicial</a></li>
+                    
+                    <li class="active" style="color:white;font-weight: bold">Cursos</li>
+                </ol>
+                <div class="col-lg-12" style="text-align:center">
+                    <h1 class="page-header">Relação de Cursos</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group">
+                      <li class="list-group-item" style="text-align:center;background-color:#DCDCDC">Listagem dos Cursos</li>
+                      <li class="list-group-item" >
+                          Atualmente existem 3 cursos cadastrados.
+                      </li>
+                      <li class="list-group-item">
+                            <table class="table table-striped">
+                                <thead>
+                                      <tr>
+                                        <th>Código</th>
+                                        <th>Nome</th>
+                                        <th>Matriculados</th>
+                                        <th>Vagas Total</th>
+                                        <th>Horário</th>
+                                        <th>Dias</th>
+                                        <th>Local</th>
+                                        <th>Ações</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>01</td>
+                                        <td>Frevo</td>
+                                        <td>34 matriculados</td>
+                                        <td>40 vagas</td>
+                                        <td>16:00-18:00hs</td>
+                                        <td>Seg e Qua</td>
+                                        <td>Piedade</td>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil"></span>
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                            <span class="glyphicon glyphicon-search">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>02</td>
+                                        <td>Capoeira</td>
+                                        <td>31 matriculados</td>
+                                        <td>35 vagas</td>
+                                        <td>10:00-11:30hs</td>
+                                        <td>Ter e Qui</td>
+                                        <td>Recife Antigo</td>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil"></span>
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                            <span class="glyphicon glyphicon-search">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>03</td>
+                                        <td>Esportes</td>
+                                        <td>21 matriculados</td>
+                                        <td>30 vagas</td>
+                                        <td>14:00-15:30hs</td>
+                                        <td>Seg e Sex</td>
+                                        <td>Coelhos</td>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil"></span>
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                            <span class="glyphicon glyphicon-search">
+                                        </td>
+                                      </tr>
+                                </tbody>
+                            </table>
+                      </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $("#Mensagem").hide();
+                $("#MostrarMensagem").click(MostrarMensagem);
+                });
+ 
+            function MostrarMensagem(){
+                $("#Mensagem").show();
+            }
+            
+        </script>
+        <script>
+         $(function() {
+            var availableTutorials = [
+               "Frevo",
+               "Maracatu",
+               "Esportes",
+               "Capoeira",
+               
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: availableTutorials
+            });
+         });
+      </script>
+        
+        
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        
+        
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+
+        <![endif]-->
+
+    </body>
+
+</html>
